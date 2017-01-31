@@ -73,8 +73,7 @@ public class AppNavigationTest {
                 .perform(navigateTo(R.id.statistics_navigation_menu_item));
 
         // Check that statistics Activity was opened.
-        String expectedNoStatisticsText = InstrumentationRegistry.getTargetContext()
-                .getString(R.string.no_statistics_available);
+        String expectedNoStatisticsText = "Dupa";
         onView(withId(R.id.no_statistics)).check(matches(withText(expectedNoStatisticsText)));
     }
 
